@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-sky-100 min-h-screen flex items-center justify-center" style="background: linear-gradient(135deg, #4facfe, #00f2fe);
+">
+
+
+   <div id="weather">
+<h2 class="text-[24px] font-bold text-black mb-2 text-center">
+  Weather Forecast
+</h2>
+<p class="text-md text-gray-600 mb-4 text-center">
+  Search real-time weather by city name
+</p>
+       <!-- Search Bar -->
+        <div class="flex gap-2 mb-4">
+        <input
+            id="city"
+            type="text"
+            placeholder="Search city weather ..."
+            class="flex-1 px-4 py-2 bg-white rounded-lg text-gray-800
+                focus:outline-none focus:ring-2 focus:ring-white"
+        />        
+        <button
+            onclick="searchWeather()"
+            class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg font-semibold text-white">
+            Search
+        </button>
+        </div>
+
+        <div id="result"></div>
+        <p id="error" 
+        class="hidden mt-4 rounded-lg border border-red-300 bg-red-50 px-4 py-3 text-center text-sm font-medium text-red-700"
+        >
+</p>
+   </div>
+    
+    <script src="app.js"></script>
+
+</body>
+</html>
